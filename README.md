@@ -12,6 +12,7 @@ This project has 3 major parts:
 
 ### To Execute:
 You can run the model,py which will store the regression algorithm used into a file names model.pkl. It is a file which is used to store the algorithm and can be used when executing flask API.
+
 Lastly, You can open Anaconda command prompt where you can type 
            
            Python app.py
