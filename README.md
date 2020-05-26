@@ -13,6 +13,7 @@ This project has 3 major parts:
 ### To Execute:
 You can run the model,py which will store the regression algorithm used into a file names model.pkl. It is a file which is used to store the algorithm and can be used when executing flask API.
 Lastly, You can open Anaconda command prompt where you can type 
+           
            Python app.py
 
 Which will basically run your model and generate a host id for example: http://127.0.0.1:5000/. You can then directly paste this Id in your browser and you will be able to see fields to enter some values to predict the house prices of AirBnb.
