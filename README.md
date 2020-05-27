@@ -6,7 +6,7 @@ Dataset can be found at  https://www.kaggle.com/dgomonov/new-york-city-airbnb-op
 
 ### Project division:
 This project has 3 major parts:
-1.	model.py - This contains code for our Machine Learning model to predict employee house prices for NewYork AirBnb based on training data in ‘airbnb.csv’ file.
+1.	model.py - This contains code for our Machine Learning model to predict house prices for NewYork AirBnb based on training data in ‘airbnb.csv’ file.
 2.	app.py - This contains Flask APIs that receives house details through GUI or API calls, computes the precited value based on our model and returns it.
 3.	templates - This folder contains the HTML template to allow user to enter house detail, area, number of nights and number of people displays the predicted house prices.
 
