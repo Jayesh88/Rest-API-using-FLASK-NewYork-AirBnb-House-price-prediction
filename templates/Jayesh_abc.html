@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict NewYork Airbnb Housing Price</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="minimum_nights" placeholder="Minimum Nights" required="required" />
+        <!--input type="text" name="room_type" id="room type" placeholder="1] Private Room 2] Entire Room 3] shared Room" required="required"  /-->
+            <!--label for="room type">Type of room</label-->
+            <select id="room type" name="room_type" selected="room type" >
+              <option value="1">Private Room</option>
+              <option value="2">Entire Room</option>
+              <option value="3">shared Room</option>
+             </select>
+        <!--input type="text" name="neighbourhood_group" id="neighbourhood" placeholder="1] Brooklyn 2] Manhatten" required="required"  /-->
+            <!--label for="neighbourhood">Neighbourhood</label-->
+            <select id="neighbourhood" name="neighbourhood_group">
+              <option value="1">Brooklyn</option>
+              <option value="2">Manhatten</option>
+             </select>
+        <input type="text" name="number_of_review" placeholder="Review" required="required"  />
+        <input type="text" name="calculated_host_listings_count" placeholder="Host count" required="required"  />
+        <input type="text" name="availability_365" placeholder="Availability" required="required"  />
+
+        		<!--input type="text" name="interview_score" placeholder="Interview Score" required="required" /-->
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+    
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
