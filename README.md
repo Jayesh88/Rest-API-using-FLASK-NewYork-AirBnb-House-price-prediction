@@ -19,5 +19,7 @@ Lastly, You can open Anaconda command prompt where you can type
 
 Which will basically run your model and generate a host id for example: http://127.0.0.1:5000/. You can then directly paste this Id in your browser and you will be able to see fields to enter some values to predict the house prices of AirBnb.
 
+![image](https://user-images.githubusercontent.com/61301712/104544635-3a198980-55f6-11eb-944d-4686f089f24a.png)
+
 
 Note: There is a screenshot in this repository which shows how the layout of page looks like. 
